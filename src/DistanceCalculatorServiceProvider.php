@@ -2,9 +2,9 @@
 
 namespace Hitocean\DistanceCalculator;
 
+use Hitocean\DistanceCalculator\Commands\DistanceCalculatorCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Hitocean\DistanceCalculator\Commands\DistanceCalculatorCommand;
 
 class DistanceCalculatorServiceProvider extends PackageServiceProvider
 {
@@ -22,7 +22,7 @@ class DistanceCalculatorServiceProvider extends PackageServiceProvider
             ->hasMigration('create_distance-calculator_table')
             ->hasCommand(DistanceCalculatorCommand::class);
 
-        $this->app->bind('distance-calculator',function(){
+        $this->app->bind('distance-calculator', function () {
             return new DistanceCalculator();
         });
     }

@@ -2,9 +2,9 @@
 
 namespace Hitocean\DistanceCalculator\Tests;
 
+use Hitocean\DistanceCalculator\DistanceCalculatorServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Hitocean\DistanceCalculator\DistanceCalculatorServiceProvider;
 
 class TestCase extends Orchestra
 {

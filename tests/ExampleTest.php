@@ -1,7 +1,6 @@
 <?php
 
-it('distancia entre dos coordenadas', function ()
-{
+it('distancia entre dos coordenadas', function () {
     $distance = \Hitocean\DistanceCalculator\DistanceCalculator::distanceBetweenTwoCoordinates(
         new \Hitocean\DistanceCalculator\GeolocationDTO(
             latitude:  -34.6089248968147,
@@ -15,8 +14,7 @@ it('distancia entre dos coordenadas', function ()
     expect(0.73)->toEqual($distance);
 });
 
-it('distancia entre muchas coordenadas', function ()
-{
+it('distancia entre muchas coordenadas', function () {
     $distance = \Hitocean\DistanceCalculator\DistanceCalculator::distanceBetweenManyCoordinates([
         new \Hitocean\DistanceCalculator\GeolocationDTO(
             latitude:  -34.6089248968147,
