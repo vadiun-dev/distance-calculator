@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Hitocean\DistanceCalculator\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class DistanceCalculatorCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'distance-calculator';
 
     public $description = 'My command';
 
