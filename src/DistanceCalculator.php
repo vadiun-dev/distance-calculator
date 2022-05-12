@@ -2,6 +2,8 @@
 
 namespace Hitocean\DistanceCalculator;
 
+
+
 class DistanceCalculator
 {
     public static function distanceBetweenManyCoordinates(array $geolocations): float
