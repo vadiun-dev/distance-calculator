@@ -2,8 +2,6 @@
 
 namespace Hitocean\DistanceCalculator;
 
-
-
 class DistanceCalculator
 {
     public static function distanceBetweenManyCoordinates(array $geolocations): float
@@ -37,9 +35,9 @@ class DistanceCalculator
 
         $angle = 2 * asin(
             sqrt(
-                    (sin($latDelta / 2) ** 2) +
+                (sin($latDelta / 2) ** 2) +
                     cos($latFrom) * cos($latTo) * (sin($lonDelta / 2) ** 2)
-                )
+            )
         );
 
         return round($angle * $earthRadius, 2);
